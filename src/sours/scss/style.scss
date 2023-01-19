@@ -1,0 +1,355 @@
+@import "null.scss";
+@import url("https://fonts.googleapis.com/css2?family=Heebo:wght@500&display=swap");
+$Heebo: "Heebo", sans-serif;
+
+.main {
+  max-width: 1152px;
+  background: rgba(255, 255, 255, 1);
+  margin: 0 auto;
+}
+
+.content {
+  background: rgba(255, 255, 255, 1);
+  max-width: 1152px;
+}
+
+.nav {
+  max-width: 1032px;
+  height: 58px;
+  margin: 0 auto;
+
+  .nav_content {
+    width: 240px;
+    display: flex;
+    justify-content: space-between;
+    float: right;
+    color: rgba(0, 0, 0, 1);
+    font-size: 20px;
+    font-weight: 500;
+    line-height: 29px;
+    letter-spacing: 0px;
+    text-align: right;
+    font-family: $Heebo;
+    margin-top: 27px;
+  }
+}
+
+.nav_menuModal {
+  height: 20px;
+  width: 30px;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  float: right;
+  display: none;
+
+  .Nav_menuModal_line {
+    height: 0px;
+    width: 30px;
+    border: 1px solid rgba(33, 36, 61, 1);
+  }
+}
+
+.header {
+  max-width: 850px;
+  margin: 0 auto;
+  margin-top: 158px;
+  flex-wrap: wrap;
+
+  .Heaer_right {
+    float: right;
+  }
+
+  .header_headers {
+    font-family: $Heebo;
+    font-size: 44px;
+    font-weight: 700;
+    line-height: 60px;
+    letter-spacing: 0px;
+
+    width: 440px;
+  }
+
+  .header_text {
+    font-family: $Heebo;
+    font-size: 16px;
+    font-weight: 400;
+    line-height: 24px;
+    letter-spacing: 0px;
+
+    width: 500px;
+    margin-top: 40px;
+  }
+
+  .header_button {
+    height: 47px;
+    width: 208px;
+    left: 148px;
+    top: 477px;
+    border-radius: 2px;
+    background: rgba(255, 100, 100, 1);
+    font-family: $Heebo;
+    font-size: 20px;
+    font-weight: 500;
+    line-height: 29px;
+    letter-spacing: 0px;
+    text-align: center;
+    color: rgba(255, 255, 255, 1);
+    margin-top: 38px;
+  }
+}
+
+.RecentPost {
+  margin-top: 71px;
+  height: 396px;
+  max-width: 1152px;
+  background: rgba(237, 247, 250, 1);
+
+  .RecentPost_header {
+    display: flex;
+    justify-content: space-between;
+    max-width: 860px;
+    margin: 0 auto;
+    padding-top: 7px;
+    align-items: center;
+
+    .RecentPost_header_TextLeft {
+      font-family: $Heebo;
+      font-size: 22px;
+      font-weight: 400;
+      line-height: 60px;
+    }
+
+    .RecentPost_header_TextRight {
+      font-family: $Heebo;
+      font-size: 16px;
+      font-weight: 400;
+      line-height: 24px;
+      color: rgba(0, 168, 204, 1);
+    }
+  }
+
+  .RecentPost_Blocks {
+    max-width: 860px;
+    display: flex;
+    justify-content: space-between;
+    margin: 0 auto;
+    flex-wrap: wrap;
+
+    .RecentPost_Block_left {
+      height: 295px;
+      width: 418px;
+      border-radius: 4px;
+      background: rgba(255, 255, 255, 1);
+      box-shadow: 0px 4px 10px 0px rgba(187, 225, 250, 0.25);
+    }
+
+    .RecentPost_blockRight {
+      height: 295px;
+      width: 418px;
+      border-radius: 4px;
+      background: rgba(255, 255, 255, 1);
+      box-shadow: 0px 4px 10px 0px rgba(187, 225, 250, 0.25);
+    }
+
+    .RecentPost_Blocks_header {
+      font-family: $Heebo;
+      font-style: normal;
+      font-weight: 700;
+      font-size: 26px;
+      line-height: 38px;
+      color: #21243d;
+
+      width: 370px;
+      margin: 0 auto;
+      margin-top: 24px;
+    }
+
+    .RecentPost_Blocks_Center {
+      display: flex;
+      justify-content: space-between;
+      align-items: center;
+      width: 270px;
+      margin-left: 23px;
+      margin-top: 17px;
+
+      .RecentPost_Blocks_Line {
+        height: 21px;
+        border: 1px solid rgba(0, 0, 0, 1);
+        background: rgba(0, 0, 0, 1);
+      }
+
+      .RecentPost_Blocks_Date {
+        font-family: $Heebo;
+        font-size: 18px;
+        font-weight: 400;
+        line-height: 26px;
+        text-align: left;
+        color: #21243d;
+      }
+
+      .RecentPost_Blocks_theme {
+        font-family: $Heebo;
+        font-size: 18px;
+        font-weight: 400;
+        line-height: 26px;
+        text-align: left;
+        color: #21243d;
+      }
+    }
+
+    .RecentPost_Blocks_Footer {
+      font-family: "Heebo";
+      font-style: normal;
+      font-weight: 400;
+      font-size: 16px;
+      line-height: 24px;
+      color: #21243d;
+      width: 368px;
+      margin: 0 auto;
+      margin-top: 17px;
+    }
+  }
+}
+
+.ModalShov {
+  position: fixed;
+  top: 0;
+  bottom: 0;
+  right: 0;
+  left: 0;
+  background-color: rgba(0, 0, 0, 0.5);
+
+  .ModalNav {
+
+    width: 250px;
+    height: 200px;
+    border: 1px solid rebeccapurple;
+    float: right;
+    background-color: white;
+  }
+}
+
+
+.ModalNav_Close {
+  width: 15px;
+  height: 15px;
+  background-color: black;
+  clip-path: polygon(20% 0%, 0% 20%, 30% 50%, 0% 80%, 20% 100%, 50% 70%, 80% 100%, 100% 80%, 70% 50%, 100% 20%, 80% 0%, 50% 30%);
+  position: relative;
+  top: 5px;
+  left: 220px;
+}
+
+.ModalNav_content {
+  display: flex;
+  justify-content: space-between;
+  flex-direction: column;
+  font-family: $Heebo;
+  font-size: 20px;
+  font-weight: 500;
+  line-height: 29px;
+  letter-spacing: 0px;
+  text-align: center;
+  height: 160px;
+}
+
+.My_Works {
+
+  max-width: 860px;
+  margin: 0 auto;
+  height: 785px;
+  border: 1px solid red;
+
+  .My_Works_TextHeader {
+    font-family: $Heebo;
+    font-size: 22px;
+    font-weight: 400;
+    line-height: 60px;
+    letter-spacing: 0px;
+    text-align: left;
+    color: #21243D
+  }
+}
+
+@media (max-width: 743px) {
+  .nav {
+    display: none;
+    background-color: red;
+  }
+
+  .nav_menuModal {
+    display: flex;
+    margin-top: -130px;
+    margin-right: 18px;
+  }
+
+  .header {
+    display: flex;
+    justify-content: center;
+    flex-direction: column;
+  }
+
+  .Header_left {
+    margin: 0 auto;
+    margin-top: 43px;
+
+    .header_headers {
+      max-width: 270px;
+      font-family: $Heebo;
+      font-size: 32px;
+      font-weight: 700;
+      line-height: 40px;
+      letter-spacing: 0px;
+      text-align: center;
+      margin: 0 auto;
+    }
+
+    .header_text {
+      font-family: $Heebo;
+      font-size: 16px;
+      font-weight: 400;
+      line-height: 24px;
+      letter-spacing: 0px;
+      text-align: auto;
+      max-width: 328px;
+      text-align: center;
+    }
+
+    .header_button {
+      margin: 0 auto;
+      display: block;
+      margin-top: 36px;
+    }
+  }
+
+  .Heaer_right {
+    margin: 0 auto;
+  }
+}
+
+@media (max-width: 836px) {
+  .RecentPost_Blocks {
+    display: flex;
+    flex-wrap: nowrap;
+    flex-direction: column;
+    align-items: center;
+  }
+
+  .RecentPost {
+    height: 750px;
+
+    .RecentPost_blockRight {
+      margin-top: 17px;
+    }
+
+    .RecentPost_header_TextRight {
+      display: none;
+    }
+
+    .RecentPost_header {
+      display: flex;
+      justify-content: center;
+    }
+  }
+}
