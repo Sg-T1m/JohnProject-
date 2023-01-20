@@ -2,7 +2,8 @@ import css from "./css/style.css";
 import types from "./modulWork.ts"
 import navModal from "./OpenModal.ts"
 import { CreateModal } from "./OpenModal.ts";
-import Fetchinquiry from "./FetchInquiry.ts";
+import Fetchinquiryss from "./FetchInquiry.ts";
+import { FectInquiry } from "./FetchInquiry.ts";
 const navMenu = document.querySelector(`.nav_menuModal`)
 var contentHtmlNavModal = ` 
 <div class="ModalNav">
@@ -25,7 +26,7 @@ function OpenModalNavMenu() {
   const modalNav = new CreateModal(contentHtmlNavModal, elemNavModal, ClassNameNavModal)
   modalNav.OpenModal()
   const close = document.querySelector(`.ModalShov`)
-  
+
   close.addEventListener(`click`, CloseNavMenu)
   function CloseNavMenu() {
     modalNav.close()
@@ -33,3 +34,6 @@ function OpenModalNavMenu() {
   const ModalNavNoClose = document.querySelector(`.ModalNav`)
   ModalNavNoClose.addEventListener("click", (e) => e.stopPropagation());
 }
+const ddd = `svsdv`
+const dvdvd = `http://localhost:3000/news`
+const test = document.querySelector(`.header_button`)
