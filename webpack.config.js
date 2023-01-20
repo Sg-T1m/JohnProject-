@@ -20,6 +20,7 @@ module.exports = {
   devServer:{
     port: 4200
   },
+  
   module: {
     rules: [
       {
@@ -59,5 +60,8 @@ module.exports = {
       }
      
     ],
+  },
+  resolve: {
+    extensions: [".ts", ".tsx", ".js"]
   },
 };

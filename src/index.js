@@ -4,6 +4,7 @@ import navModal from "./OpenModal.ts"
 import { CreateModal } from "./OpenModal.ts";
 import Fetchinquiryss from "./FetchInquiry.ts";
 import { FectInquiry } from "./FetchInquiry.ts";
+import blogOpen from "./BlogOpen.ts"
 const navMenu = document.querySelector(`.nav_menuModal`)
 var contentHtmlNavModal = ` 
 <div class="ModalNav">

@@ -20,6 +20,6 @@ export class FectInquiry {
     gets() {
         const test = fetch(`${this.url}`)
         test.then((data) => data.json())
-        .then((data) => this.bodyFunctions(data))
+            .then((data) => this.bodyFunctions(data))
     }
 }
