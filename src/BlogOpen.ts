@@ -7,5 +7,5 @@ const openBlogs: Element | null = document.querySelector(`.hrev_Blog`)
 openBlogs?.addEventListener(`click`,  modalNav2.gets)
 
 function renderBlogPage(data:string): void {
-    modalNav2.gets()
+    
 }
