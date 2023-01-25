@@ -4,8 +4,9 @@ const { default: test } = require("node:test");
 module.exports = {
   context: path.resolve(__dirname, "src"),
   mode: `development`,
-  entry:{
-    main:[`@babel/polyfill`, "./index.js"]
+  entry: {
+    main: [`@babel/polyfill`, "./index.js"],
+    service: [`@babel/polyfill`, "./test.js"]
   },
   output: {
     filename: `bundle[contenthash].js`,
@@ -14,13 +15,20 @@ module.exports = {
   },
   plugins: [
     new HtmlWebpackPlugin({
-      template: path.resolve(__dirname, `src`, `maket.html`),
+      template: path.resolve(__dirname, `src`, `maket.html`,),
+      chunks: ['main']
+
+    }),
+    new HtmlWebpackPlugin({
+      template: path.resolve(__dirname, `src`, `blog.html`,),
+      filename: 'blog.html',
+      chunks: ['service'],
     }),
   ],
-  devServer:{
+  devServer: {
     port: 4200
   },
-  
+
   module: {
     rules: [
       {
@@ -54,11 +62,11 @@ module.exports = {
             presets: [
               '@babel/preset-env',
               "@babel/preset-typescript"
-          ]
+            ]
           }
         }
       }
-     
+
     ],
   },
   resolve: {

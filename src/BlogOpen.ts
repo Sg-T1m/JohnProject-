@@ -4,10 +4,19 @@ const ddds: string = `svsdv`
 const modalNav2 = new FectInquiry(ddds, dvdvds, renderBlogContent)
 const openBlogs: Element | null = document.querySelector(`.hrev_Blog`)
 const Home_Listners: any = document.querySelector(".content");
+interface items {
+    Headertext: string;
+    date: string;
+    theme: string;
+    content: string;
+}
 
 openBlogs?.addEventListener(`click`, () => {
     renderBlogPage()
+    
 })
+
+
 function renderBlogPage(): void {
     const BlogHtml: Element = document.createElement("div");
     BlogHtml.classList.add("Blog")
@@ -20,14 +29,11 @@ function renderBlogPage(): void {
 </div>`
     Home_Listners.innerHTML = "";
     Home_Listners.appendChild(BlogHtml);
-    modalNav2.gets()
+    modalNav2.gets();
+    openBlogs?.classList.add("RedText");
 }
-interface items {
-    Headertext: string;
-    date: string;
-    theme: string;
-    content: string;
-}
+
+
 function renderBlogContent(data: Array<items>): void {
     const inerContent: Element | null = document.querySelector(`.Blog_content`)
     data.forEach((item: items): void => {
